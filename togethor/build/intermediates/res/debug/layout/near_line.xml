@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/gray">
+              
+     <include 
+	    android:id="@+id/common_header"
+	    layout="@layout/common_header"/>
+     
+     <LinearLayout android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:orientation="horizontal"
+         android:gravity="center">
+         
+         
+         <LinearLayout android:id="@+id/layout_publish"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+	         android:layout_height="60dp"
+	         android:orientation="vertical"
+	         android:gravity="center"
+	         android:background="@drawable/bg_btn_2">
+	         
+             <ImageView android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:src="@drawable/icon_account"/>
+             
+             <TextView android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="12sp"
+	                android:layout_margin="5dp"
+	                android:text="路线发布"
+	                android:background="@drawable/bg_btn_2"
+	                android:textColor="@color/new_blue"/>
+             
+             
+	     </LinearLayout>
+	     
+         
+         <LinearLayout android:layout_width="1dp"
+	        android:layout_height="60dp"
+	        android:gravity="center"
+	        android:orientation="horizontal">
+		    
+		    
+		    <View android:layout_width="0.5dp"
+		        android:layout_height="60dp"
+		        android:background="@color/gray_2" />
+		    
+		    
+		   
+		   
+	    
+	    </LinearLayout>
+	     
+         
+         <LinearLayout android:id="@+id/layout_search" 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+	         android:layout_height="60dp"
+	         android:orientation="vertical"
+	         android:gravity="center"
+	         android:background="@drawable/bg_btn_2">
+             
+             <ImageView android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:src="@drawable/icon_account"/>
+             
+             <TextView android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="12sp"
+	                android:layout_margin="5dp"
+	                android:text="路线查找"
+	                android:textColor="@color/new_blue"/>
+             
+             
+	     </LinearLayout>
+         
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:id="@+id/loading_layout"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="center"
+	     android:layout_marginTop="10dp">
+                
+                
+         <ProgressBar android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/mProgress_circle"
+              android:layout_gravity="center"
+              android:indeterminateDuration="700"/>
+	            
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="加载中..."
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="15sp" 
+            android:textColor="@color/black" 
+            android:layout_gravity="center"/>
+               
+	</LinearLayout>
+	
+     <RelativeLayout 
+         android:id="@+id/layout_none"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="gone">
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="抱歉，暂时没有找的合适的路线"
+         android:textColor="@color/dark_red"
+         android:textSize="18sp"
+         android:layout_centerInParent="true"/>
+     
+     </RelativeLayout>
+     
+     <com.android.together.view.MyRefreshListView 
+         android:id="@+id/listview"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="3dp"
+         android:layout_marginRight="2dp"
+         android:layout_marginLeft="2dp"
+         android:scrollbars="none"
+         android:cacheColorHint="@android:color/transparent"
+	     android:dividerHeight="3dp"
+	     android:listSelector="@android:color/transparent"
+	     android:divider="@android:color/transparent"
+	     android:visibility="gone">
+         
+         
+     </com.android.together.view.MyRefreshListView>
+    
+    
+</LinearLayout><!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/near_line.xml -->

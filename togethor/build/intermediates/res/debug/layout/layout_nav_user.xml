@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.android.together"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+            
+    <com.android.together.view.CircleImageView 
+	    android:id="@+id/iv_head"
+        android:layout_width="50dp" 
+        android:layout_height="50dp"
+        circle:border_color="@color/transparent"
+        android:src="@drawable/tt"/>
+            
+    <TextView 
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+            
+    <TextView 
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(车主)"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"/>
+            
+</LinearLayout>
+<!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/layout_nav_user.xml -->

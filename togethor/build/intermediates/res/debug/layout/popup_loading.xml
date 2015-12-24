@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent">
+    
+    <ProgressBar 
+        android:id="@+id/temp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@android:style/Widget.ProgressBar.Inverse" 
+        android:layout_centerInParent="true"/>
+    
+    
+    <TextView 
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="请稍后..."
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/temp"/>
+    
+    
+
+</RelativeLayout>
+<!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/popup_loading.xml -->

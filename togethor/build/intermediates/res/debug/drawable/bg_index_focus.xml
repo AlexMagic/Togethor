@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+   
+    <item >   
+        <shape >
+		    <solid android:color="#fafafafa" />   
+		    <corners android:radius="2dp"/>  
+		     
+		     
+        </shape>
+     </item>
+</layer-list><!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/drawable/bg_index_focus.xml -->

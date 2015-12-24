@@ -1,0 +1,109 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Togethor:
+* .DS_Store
+* ic_launcher-web.png
+* proguard-project.txt
+From Volley:
+* .DS_Store
+* .gitignore
+* Android.mk
+* build.gradle
+* build.xml
+* custom_rules.xml
+* proguard-project.txt
+* proguard.cfg
+* tests/
+* tests/.classpath
+* tests/.project
+* tests/Android.mk
+* tests/project.properties
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:18.0.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Volley:
+* AndroidManifest.xml => volley/src/main/AndroidManifest.xml
+* assets/ => volley/src/main/assets
+* res/ => volley/src/main/res
+* src/ => volley/src/main/java/
+* src/.DS_Store => volley/src/main/resources/.DS_Store
+* src/com/.DS_Store => volley/src/main/resources/com/.DS_Store
+* src/com/android/.DS_Store => volley/src/main/resources/com/android/.DS_Store
+* src/com/android/volley/.DS_Store => volley/src/main/resources/com/android/volley/.DS_Store
+* tests/res/ => volley/src/androidTest/res/
+* tests/src/ => volley/src/androidTest/java/
+In Togethor:
+* AndroidManifest.xml => togethor/src/main/AndroidManifest.xml
+* assets/ => togethor/src/main/assets
+* libs/BaiduLBS_Android.jar => togethor/libs/BaiduLBS_Android.jar
+* libs/jackson-all-1.7.6.jar => togethor/libs/jackson-all-1.7.6.jar
+* libs/nineoldandroids-library-2.4.0.jar => togethor/libs/nineoldandroids-library-2.4.0.jar
+* libs/sinapush_2.6.4_20150427_release.jar => togethor/libs/sinapush_2.6.4_20150427_release.jar
+* libs/universal-image-loader-1.9.3.jar => togethor/libs/universal-image-loader-1.9.3.jar
+* lint.xml => togethor/lint.xml
+* res/ => togethor/src/main/res/
+* src/ => togethor/src/main/java/
+* src/.DS_Store => togethor/src/main/resources/.DS_Store
+* src/com/.DS_Store => togethor/src/main/resources/com/.DS_Store
+* src/com/android/.DS_Store => togethor/src/main/resources/com/android/.DS_Store
+* src/com/jeremyfeinstein/slidingmenu/lib/.DS_Store => togethor/src/main/resources/com/jeremyfeinstein/slidingmenu/lib/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

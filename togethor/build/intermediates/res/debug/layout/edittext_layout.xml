@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp">
+    
+    <EditText android:id="@+id/et_addr"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="输入地点..."
+            android:singleLine="true"
+            android:textSize="15sp" 
+            android:textColor="@color/black"
+            android:layout_centerVertical="true" />
+        
+        <Button android:id="@+id/btn_del"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_reflush_cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/et_addr"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+
+</RelativeLayout>
+<!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/edittext_layout.xml -->

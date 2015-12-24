@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffffff</color>
+	<color name="alpha_white">#70ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="dark_red">#ff8c1c1c</color>
+	<color name="transparent">#00000000</color>
+	<color name="bg_headerbar_spinner_normal">@color/transparent</color>
+    <color name="bg_headerbar_spinner_selected">#5f000000</color>
+    <color name="bg_headerbar_spinner_press">#7f000000</color>
+    
+    <color name="gray">#cccccc</color>
+    <color name="gray_2">#f7f7f7</color>
+    <color name="not_pressed">#eeeeee</color>
+    <color name="pressed">#afafaf</color>
+    <color name="tab_bg">#235e82</color>
+    <color name="related_knowledge_help">#15d5bc</color>
+    <color name="policy_intro_help">#21b2e2</color>
+    <color name="race_intro_help">#ec5b5b</color>
+    <color name="new_blue">#00acc1</color>
+    <color name="new_blue_2">#26c6da</color>
+    <color name="menu_bg">#2e5e80</color>
+    <color name="pink">#ff4081</color>
+    
+    <color name="dropbar_text_color">#ff434343</color>
+   
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.android.together"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray">
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <com.android.together.view.CircleImageView 
+            android:id="@+id/iv_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@color/alpha_white"
+            circle:border_color="@color/transparent"
+            android:layout_centerInParent="true"/>
+        
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="请拍下您的头像哦"
+            android:textColor="@color/pink"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/iv_head"
+            android:layout_marginTop="10dp"/>
+        
+        
+        
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_popwindow">
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="姓名:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+		
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+	        <EditText android:id="@+id/et_nick"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:textColor="@color/black" />	
+	            
+	        
+	        <ImageView 
+	            android:id="@+id/im_nick"
+	            android:layout_width="50dp"
+	            android:layout_height="80dp"
+	            android:src="@drawable/im_remind_icon"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"/>
+	            
+	        </RelativeLayout>
+        
+        
+		</LinearLayout>    	
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+    
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="邮箱:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <EditText 
+                android:id="@+id/et_mail"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:textColor="@color/black" />
+            
+            <ImageView 
+                android:id="@+id/im_mail"
+	            android:layout_width="50dp"
+	            android:layout_height="80dp"
+	            android:src="@drawable/im_remind_icon"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"/>
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+             
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="性别:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <RadioGroup
+		            android:id="@+id/radiogroup"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:gravity="center_vertical">
+		            
+	                <RadioButton
+		                android:id="@+id/rb_boy"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="男"
+                		android:textColor="#6D6D6D" 
+                		android:button="@null"  
+                		android:drawableLeft="@drawable/btn_radio"/>
+	                
+	                <RadioButton
+	                    android:id="@+id/rb_girl"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="女"
+                		android:textColor="#6D6D6D" 
+                		android:button="@null"  
+                		android:layout_marginLeft="30dp"
+                		android:drawableLeft="@drawable/btn_radio"/>
+	                
+	                
+	                
+            	</RadioGroup>
+            	
+            <ImageView 
+                android:id="@+id/im_sex"
+	            android:layout_width="50dp"
+	            android:layout_height="80dp"
+	            android:src="@drawable/im_remind_icon"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"/>
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="密码:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <EditText 
+                android:id="@+id/et_pwd"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:inputType="textPassword" 
+	            android:textColor="@color/black" />
+            
+            <ImageView 
+                android:id="@+id/im_pwd"
+	            android:layout_width="50dp"
+	            android:layout_height="80dp"
+	            android:src="@drawable/im_remind_icon"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"/>
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="密码确认:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <EditText 
+                android:id="@+id/et_pwd_confirm"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:inputType="textPassword" 
+	            android:textColor="@color/black" />
+            
+            <ImageView 
+                android:id="@+id/im_pwd_confirm"
+	            android:layout_width="50dp"
+	            android:layout_height="80dp"
+	            android:src="@drawable/im_remind_icon"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"/>
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+</LinearLayout>
+<!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/reg_info.xml -->

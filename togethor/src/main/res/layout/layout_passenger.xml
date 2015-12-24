@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.android.together"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_index_focus"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+      
+      
+      
+      
+     <LinearLayout android:layout_width="0dp"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       android:orientation="horizontal"
+	       android:layout_margin="10dp"
+	       android:gravity="center">
+       
+         
+         <com.android.together.view.CircleImageView 
+	    	android:id="@+id/iv_head"
+            android:layout_width="50dp" 
+            android:layout_height="50dp"
+            circle:border_color="@color/transparent"
+            android:src="@drawable/tt"/>
+       
+       
+       
+   </LinearLayout>
+   
+     
+     <LinearLayout android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="3"
+       android:orientation="vertical"
+       android:gravity="center_vertical">
+       
+         <TextView 
+           android:id="@+id/tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="11dp"
+           android:text="Alex"
+           android:background="@null"
+           android:textSize="15sp" 
+           android:layout_marginTop="5dp"
+           android:textColor="@color/black" />
+         
+         <TextView 
+           android:id="@+id/tv_num"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="11dp"
+           android:text="上车人数：2人"
+           android:background="@null"
+           android:textSize="15sp" 
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:textColor="@color/red" />
+         
+       
+   </LinearLayout>
+   
+     <View android:layout_width="0.5dp"
+       android:layout_height="match_parent"
+       android:background="@color/gray" />
+   
+     
+     <LinearLayout android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:orientation="horizontal"
+       android:gravity="center">
+       
+         <ImageView android:layout_width="wrap_content"
+      		    android:layout_height="wrap_content"
+      		    android:src="@drawable/ub__icon_call"/>
+      
+       
+   </LinearLayout>
+ 
+</LinearLayout>
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   
+    android:id="@+id/root_header_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.android.together"
+    android:background="@color/new_blue_2"
+    android:layout_width="match_parent" 
+  	android:layout_height="wrap_content" >
+	
+    <com.android.together.view.HandyTextView
+        android:id="@+id/header_only_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="1"
+        android:shadowColor="#ff555555"
+        android:shadowDx="0.0"
+        android:shadowDy="-1.0"
+        android:shadowRadius="1.0"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+    
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="horizontal" 
+	    android:gravity="center_vertical"
+	    android:layout_centerInParent="true">
+	    
+	    
+	    <LinearLayout
+	            android:id="@+id/header_back_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:gravity="center"
+	            android:minWidth="54dp"
+	            android:padding="6dp" 
+	            android:orientation="horizontal"
+	            android:background="@drawable/bg_btn_header">
+	    
+		    <ImageView
+		        android:id="@+id/header_iv_logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="6dp"
+		        android:clickable="false"
+		        android:background="@null"/>
+		    
+		    <com.android.together.view.CircleImageView 
+			    android:id="@+id/iv_head"
+	            android:layout_width="38dp" 
+	            android:layout_height="38dp"
+	            android:src="@drawable/ub__safetynet_circle_small"
+	            circle:border_color="@color/transparent"
+	            android:visibility="gone"/>
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/header_layout_spinner_container"
+	        android:layout_width="0dip"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="horizontal">
+	    	
+	       
+	
+            <com.android.together.view.HandyTextView
+		        android:id="@+id/header_htv_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"
+		        android:marqueeRepeatLimit="1"
+		        android:shadowColor="#ff555555"
+		        android:shadowDx="0.0"
+		        android:shadowDy="-1.0"
+		        android:shadowRadius="1.0"
+		        android:textColor="@color/white"
+		        android:textSize="18sp"/>
+	    
+	    </LinearLayout>
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/header_layout_leftview_container"
+	        android:layout_width="0dip"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:visibility="gone">
+	    	
+	        <LinearLayout
+	            android:id="@+id/header_layout_left_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	            android:background="@drawable/bg_btn_header"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:gravity="center"
+	            android:minWidth="54dip"
+	            android:padding="6dip" 
+	            android:visibility="gone">
+	
+	            <TextView
+	                android:id="@+id/header_ib_left_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@color/transparent"
+	                android:clickable="false"
+	                android:focusable="false"
+	                android:layout_gravity="center"
+	               	android:text="" 
+	               	android:textColor="@android:color/white"/>
+	        </LinearLayout>
+	    
+	    </LinearLayout>
+	    
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/header_layout_middleview_container"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/header_layout_middle_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/bg_btn_header"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:gravity="center"
+	            android:minWidth="54dip"
+	            android:padding="6dip"
+	            android:visibility="gone" >
+	
+	            <TextView
+	                android:id="@+id/header_ib_middle_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@color/transparent"
+	                android:clickable="false"
+	                android:focusable="false"
+	                android:layout_gravity="center"
+	               	android:text="" 
+	               	android:textColor="@android:color/white"/>
+	        
+	        </LinearLayout>
+	
+	        
+	    </LinearLayout>
+	    
+	    
+	    <View android:id="@+id/view_line"
+	        android:layout_width="1dp"
+	        android:layout_height="20dp"
+	        android:background="@color/white"
+	        android:visibility="gone"/>
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/header_layout_rightview_container"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/header_layout_right_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/bg_btn_header"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:gravity="center"
+	            android:minWidth="54dip"
+	            android:padding="6dip" >
+	
+	            <TextView
+	                android:id="@+id/header_ib_right_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@color/transparent"
+	                android:clickable="false"
+	                android:focusable="false"
+	                android:layout_gravity="center"
+	               	android:text="" 
+	               	android:textColor="@android:color/white"/>
+	        </LinearLayout>
+	
+	       
+	    </LinearLayout>
+	    
+	</LinearLayout>
+</RelativeLayout><!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/layout/common_headerbar.xml -->

@@ -1,0 +1,84 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="AppBaseTheme2" parent="@android:style/Theme.Light.NoTitleBar" />
+    
+    <style name="bg_btn_style">
+		<item name="android:button">@null</item>
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:drawablePadding">4dp</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	
+   
+
+    <style name="whatsnew_Txt">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+    
+    <style name="textView" >
+		<item name="android:layout_width">130dp</item>
+		<item name="android:layout_height">50dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:background">@drawable/textview_border</item>
+
+	</style>
+	<style name="textViewSmall" >
+		<item name="android:layout_width">50dp</item>
+		<item name="android:layout_height">50dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:background">@drawable/textview_border</item>
+
+	</style>
+	
+	<style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0.6</item>
+	</style>
+
+	 <style name="Popup_Animation_PushDownUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+    
+	 
+	<!-- progressBar 样式 -->
+	<style name="mProgress_circle">  
+	    <item name="android:indeterminateDrawable">@drawable/progress_circle</item>  
+	    <item name="android:minWidth">30dp</item>  
+	    <item name="android:minHeight">30dp</item>  
+	    <item name="android:maxWidth">50dp</item>  
+	    <item name="android:maxHeight">50dp</item>  
+	</style>  
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <include 
+	    android:id="@+id/common_header"
+	    layout="@layout/common_header"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        
+	    <com.baidu.mapapi.map.MapView
+	        android:id="@+id/mapView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:clickable="true"/>
+    
+    
+    </RelativeLayout>
+    
+    
+    
+    <LinearLayout android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="3dp">
+            
+            <Button android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_5"/>
+            
+        </LinearLayout>
+        
+		<HorizontalScrollView
+		    android:id="@+id/h_scrollview"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:scrollbars="horizontal" >
+		
+		    <LinearLayout
+		      android:id="@+id/layout_user"
+		      android:layout_width="match_parent"
+		      android:layout_height="fill_parent"
+		      android:gravity="center_vertical" 
+		      android:orientation="horizontal">
+		    
+		        
+		        
+		        
+		    </LinearLayout>
+		    
+		</HorizontalScrollView>
+        
+<!--         <LinearLayout  -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:orientation="vertical" -->
+<!--             android:gravity="center" -->
+<!--             android:layout_marginLeft="3dp" -->
+<!--             android:layout_marginRight="3dp"> -->
+            
+<!--             <com.android.together.view.CircleImageView  -->
+<!-- 			    android:id="@+id/iv_detail" -->
+<!-- 	            android:layout_width="50dp"  -->
+<!-- 	            android:layout_height="50dp" -->
+<!-- 	            android:src="@drawable/tt"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Alex" -->
+<!--                 android:textColor="@color/black" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="(车主)" -->
+<!--                 android:textColor="@color/gray" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--         </LinearLayout> -->
+        
+<!--         <LinearLayout  -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:orientation="vertical" -->
+<!--             android:gravity="center" -->
+<!--             android:layout_marginLeft="3dp" -->
+<!--             android:layout_marginRight="3dp"> -->
+            
+<!--             <com.android.together.view.CircleImageView  -->
+<!-- 	            android:layout_width="50dp"  -->
+<!-- 	            android:layout_height="50dp" -->
+<!-- 	            android:src="@drawable/tt"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Alex" -->
+<!--                 android:textColor="@color/black" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="(乘客1)" -->
+<!--                 android:textColor="@color/gray" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--         </LinearLayout> -->
+        
+<!--         <LinearLayout  -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:orientation="vertical" -->
+<!--             android:gravity="center" -->
+<!--             android:layout_marginLeft="3dp" -->
+<!--             android:layout_marginRight="3dp"> -->
+            
+<!--             <com.android.together.view.CircleImageView  -->
+<!-- 	            android:layout_width="50dp"  -->
+<!-- 	            android:layout_height="50dp" -->
+<!-- 	            android:src="@drawable/tt"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Alex" -->
+<!--                 android:textColor="@color/black" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="(乘客2)" -->
+<!--                 android:textColor="@color/gray" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--         </LinearLayout> -->
+        
+<!--         <LinearLayout  -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:orientation="vertical" -->
+<!--             android:gravity="center" -->
+<!--             android:layout_marginLeft="3dp" -->
+<!--             android:layout_marginRight="3dp"> -->
+            
+<!--             <com.android.together.view.CircleImageView  -->
+<!-- 	            android:layout_width="50dp"  -->
+<!-- 	            android:layout_height="50dp" -->
+<!-- 	            android:src="@drawable/tt"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Alex" -->
+<!--                 android:textColor="@color/black" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--             <TextView  -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="(乘客3)" -->
+<!--                 android:textColor="@color/gray" -->
+<!--                 android:layout_marginTop="5dp"/> -->
+            
+<!--         </LinearLayout> -->
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>

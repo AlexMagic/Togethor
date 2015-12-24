@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray">
+    
+    <include 
+	    android:id="@+id/common_header"
+	    layout="@layout/common_header"/>
+    
+    <ScrollView 
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="15dp"
+	            android:text="乘客"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp" 
+	            android:textColor="@color/black" />
+            
+            	<LinearLayout
+		            android:id="@+id/layout_passenger"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+            
+<!-- 	            	<include  -->
+<!-- 		    			layout="@layout/layout_passenger"/> -->
+	            	
+<!-- 	            	<include  -->
+<!-- 		    			layout="@layout/layout_passenger"/> -->
+            	
+            	</LinearLayout>
+            
+            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:gravity="center"
+	                android:layout_marginTop="10dp">
+	                
+	                
+	                <ProgressBar android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                style="@style/mProgress_circle"
+		                android:layout_gravity="center"
+		                android:indeterminateDuration="700"/>
+		            
+		            <TextView 
+		                android:id="@+id/tv_pass_num"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:text="等待乘客响应...(已响应0人)"
+			            android:background="@null"
+			            android:singleLine="true"
+			            android:textSize="15sp" 
+			            android:textColor="@color/black" 
+			            android:layout_gravity="center"/>
+                
+            </LinearLayout>
+            
+            
+        	<include 
+	    		layout="@layout/layout_passenger"
+	    		android:visibility="gone"/>
+        	
+            
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="15dp"
+	            android:text="路线"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp" 
+	            android:textColor="@color/black" />
+            
+            
+            
+            
+
+
+				<LinearLayout 
+		              android:orientation="vertical"
+		              android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/bg_index_focus"
+		              android:layout_marginTop="5dp"
+			          android:layout_marginLeft="5dp"
+			          android:layout_marginRight="5dp">
+		       
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:layout_margin="10dp">
+			        
+			        
+			        
+			
+					<ImageView android:layout_width="wrap_content"
+			        		    android:layout_height="wrap_content"
+			        		    android:src="@drawable/trip_self_bubble_startpoint"
+			        		    />
+			        
+			        <TextView 
+			            android:id="@+id/tv_start_addr"
+			            android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="15sp"
+		                android:layout_margin="5dp"
+		                android:text="深圳职业技术学院"
+		                android:textColor="@color/new_blue"
+		                android:layout_centerInParent="true"/>
+			        
+			    </RelativeLayout>
+			    
+			    <LinearLayout android:layout_width="fill_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_margin="5dp"
+			        android:orientation="horizontal">
+				    
+				    
+				    <View android:layout_width="0dp"
+				        android:layout_height="0.5dp"
+				        android:layout_weight="1"
+				        android:background="@color/gray" />
+				    
+				    
+				    <TextView 
+				        android:id="@+id/tv_date"
+				        android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="12sp"
+		                android:layout_margin="2dp"
+		                android:text="2015-8-17 8:00pm"
+		                android:textColor="@color/black"/>
+				    
+				    
+				    <View android:layout_width="0dp"
+				        android:layout_height="0.5dp"
+				        android:layout_weight="1"
+				        android:background="@color/gray" />
+				   
+			    
+			    </LinearLayout>
+			    
+			    
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:layout_margin="10dp">
+			        
+			        
+			        <ImageView 
+			            android:layout_width="wrap_content"
+	        		    android:layout_height="wrap_content"
+	        		    android:src="@drawable/trip_self_bubble_endpoint" />
+			        
+			        <LinearLayout android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal"
+			            android:layout_centerInParent="true">
+			            
+			            
+			            
+			             <TextView 
+			                android:id="@+id/tv_end_addr" 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textSize="15sp"
+			                android:layout_margin="5dp"
+			                android:text="世界之窗"
+			                android:textColor="@color/new_blue"/>
+			            
+			        </LinearLayout>
+			        
+			        
+			    </RelativeLayout>
+		    
+			</LinearLayout>
+			
+				
+			<Button 
+			    android:id="@+id/btn_start"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:text="开始行程"
+	            android:layout_marginTop="25dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/bg_btn_header"
+	            android:textColor="@color/white"/>
+				
+			<Button android:id="@+id/btn_cancel"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:text="取消行程"
+	            android:layout_marginTop="25dp"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:background="@color/dark_red"
+	            android:textColor="@color/white"/>
+        
+        </LinearLayout>
+		        
+    </ScrollView>
+    
+    
+    
+    
+    
+
+</LinearLayout>

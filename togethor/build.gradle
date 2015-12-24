@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.android.together"
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':volley')
+    compile 'com.android.support:appcompat-v7:19.0.0'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/jackson-all-1.7.6.jar')
+    compile files('libs/nineoldandroids-library-2.4.0.jar')
+    compile files('libs/sinapush_2.6.4_20150427_release.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+}

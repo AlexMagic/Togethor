@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/menu_bg">
+    
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="10dp">
+    
+  
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Together"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:paddingTop="20dp"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一起"
+        android:layout_alignRight="@id/title"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/title"
+        android:paddingTop="10dp"/>
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+        
+        <LinearLayout 
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_profile_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的信息"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_payment_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_share"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_share_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享行程"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_payment_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色奖励"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/layout_his"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_promo_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史记录"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/layout_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_btn_4">
+            
+            <ImageView android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ub__icon_menu_support_pressed"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_marginRight="5dp"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮助"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

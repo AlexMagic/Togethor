@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+       <item android:state_enabled="true" android:state_pressed="false" android:drawable="@color/gray_2" />  
+       <item android:state_enabled="true" android:state_pressed="true" android:drawable="@color/pink" />  
+</selector><!-- From: file:/Users/Alex/Documents/workspace_3/Togethor1/togethor/src/main/res/drawable/bg_btn_2.xml -->

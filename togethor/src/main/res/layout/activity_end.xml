@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+    
+    <include 
+	    android:id="@+id/common_header"
+	    layout="@layout/common_header"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_popwindow">
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="行程数:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+		
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+	        <TextView android:id="@+id/tv_miles"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="10公里"
+	            android:textColor="@color/pink" />	
+	            
+	        
+	      
+	            
+	        </RelativeLayout>
+        
+        
+		</LinearLayout>    	
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+    
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="省油数:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <TextView android:id="@+id/tv_oil"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="5.6L"
+	            android:textColor="@color/pink" />	
+            
+           
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="减少碳排放量:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <TextView android:id="@+id/tv_c"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="0.621千克/小时"
+	            android:textColor="@color/pink" />	
+            
+           
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+             
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="总费用:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <TextView android:id="@+id/tv_total_cost"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="30元"
+	            android:textColor="@color/pink" />	
+            
+           
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="需付车主:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <TextView android:id="@+id/tv_you_cost"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="10元"
+	            android:textColor="@color/pink" />	
+            
+           
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@color/gray"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="horizontal">
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="您的积分:"
+	            android:background="@null"
+	            android:singleLine="true"
+	            android:textSize="15sp"
+	            android:layout_gravity="center"
+	            android:textColor="@color/new_blue" />
+            
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <TextView android:id="@+id/tv_point"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentRight="true"
+	            android:singleLine="true"
+	            android:textSize="18sp"
+	            android:text="500点"
+	            android:textColor="@color/pink" />	
+            
+           
+	            
+	        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

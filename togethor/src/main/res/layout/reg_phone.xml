@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray">
+    
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_2">
+        
+        
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp">
+
+		<ImageView
+            android:id="@+id/iv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            />
+        <EditText android:id="@+id/et_phone"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_username"
+            android:hint="手机号"
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:inputType="number" 
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black" />
+        
+        <Button android:id="@+id/btn_del"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_reflush_cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+        
+        <View 
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    
+        <View android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/gray"/>
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:orientation="horizontal">
+        
+            
+	        <RelativeLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3">
+	
+			
+	            
+		        <EditText android:id="@+id/et_val"
+		            android:layout_centerVertical="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="11dp"
+		            android:hint="验证码"
+		            android:background="@null"
+		            android:singleLine="true"
+		            android:textSize="18sp" 
+		            android:inputType="phone"
+		            android:textColorHint="@color/gray"
+		            android:textColor="@color/black" />
+	        
+	       
+	    	</RelativeLayout>
+	    	
+	        
+	    	
+	        <RelativeLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2">
+	
+			
+	            
+		        <Button	android:id="@+id/btn_get_val"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="@color/tab_bg"
+		            android:onClick="login"
+		            android:gravity="center"
+		            android:text="获取验证码"
+		            android:textColor="@android:color/white"
+		            android:textSize="15sp" />
+	        
+	       
+	    	</RelativeLayout>
+    
+        </LinearLayout>
+        
+       
+        
+    </LinearLayout>
+    
+</LinearLayout>
